@@ -52,3 +52,8 @@ function showLrc() {
 
 # 核心问题
 主要是解决歌词正常显示的时候，还要做到减少后台计算，较少过度占用CPU资源，优化无处不在，嘻嘻.
+
+# 个人主页
+[冰原狼主页](https://kankan.fun/)
+[CSDN主页](https://blog.csdn.net/qq_38025939/)
+[Github主页](https://github.com/kankanol1)
