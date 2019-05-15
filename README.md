@@ -43,6 +43,12 @@ function showLrc() {
 ```javascript
   function showLrc() {
         let curTime = myAudio.currentTime;//获取当前的播放时间
+        //检测快进回退
+        if( curTime>result[flagN+1][0] ||  curTime<result[flagN][0] ){
+            for(let i=0;i<result.length;i++){
+                if((curTime >result[i][0]) && (curTime<result[i+1][0])) flagN = i;
+            }
+        }
         if ((curTime >result[flagN][0]) && (curTime<result[flagN+1][0]) && document.getElementById("lyric").innerHTML !== result[flagN][1]) {
             document.getElementById("lyric").innerHTML = result[flagN][1];
             flagN = (flagN===result.length-2) ? 0 : flagN+1;
